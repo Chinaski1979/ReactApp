@@ -1,2 +1,2 @@
-# ReactApp
-React + Redux
+# ReactNativeApp
+React Native Application
