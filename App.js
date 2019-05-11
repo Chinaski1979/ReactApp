@@ -1,48 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+import { StyleSheet, Text } from 'react-native';
 
-import Header from './Components/Header';
-import GridItem from './Components/GridItem';
+import store from './redux/store';
 
-const categories = [
-  {title: 'Section 1'},
-  {title: 'Section 2'},
-  {title: 'Section 3'},
-  {title: 'Section 4'},
-  {title: 'Section 5'},
-];
+import AppContainer from './Components/AppContainer';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Header />
-        <View style={styles.gridContainer}>
-          {
-            categories.map(category => (
-              <GridItem key={ category.title } title={ category.title } />
-            ))
-          }
-        </View>
-      </View>
+      <Provider store={store}>
+        <AppContainer />
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  gridContainer: {
-    backgroundColor: '#ecf0f1',
-    flex: 1,
-    alignSelf: 'stretch',
-    padding: 30,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-  }
-});
