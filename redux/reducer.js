@@ -1,7 +1,7 @@
 import { createAction, handleActions } from 'redux-actions';
 
 // Acctions
-export const FIRST_ACTION = createAction('FIRST_ACTION');
+export const CHANGE_APP_TITLE = createAction('CHANGE_APP_TITLE');
 
 
 export const initialState = {
@@ -17,14 +17,14 @@ export const initialState = {
 
 // Reducer
 export default handleActions({
-  FIRST_ACTION: (state, action) => {
+  CHANGE_APP_TITLE: (state, action) => {
     return Object.assign({}, state, { title: action.payload });
   },
 }, initialState);
 
 // Action dispatchers
-export const firstAction = (newTitle) => {
+export const changeAppTitle = (newTitle) => {
   return (dispatch) => {
-    dispatch(GET_ALL_TASKS(newTitle));
+    dispatch(CHANGE_APP_TITLE(newTitle));
   };
 };

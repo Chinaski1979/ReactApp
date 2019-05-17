@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { firstAction } from '../../redux/reducer';
+import { changeAppTitle } from '../../redux/reducer';
 
 import Header from '../Header';
 import GridItem from '../GridItem';
@@ -11,7 +11,7 @@ class AppContainer extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header />
+        <Header title={this.props.title} handleTitleChange={this.props.changeAppTitle}/>
         <View style={styles.gridContainer}>
           {
             this.props.categories.map(category => (
@@ -43,5 +43,5 @@ const styles = StyleSheet.create({
 });
 
 const mapState = ({ title, categories }) => ({ title, categories });
-const mapDispatch = { firstAction };
+const mapDispatch = { changeAppTitle };
 export default connect(mapState, mapDispatch)(AppContainer);

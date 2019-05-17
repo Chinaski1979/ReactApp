@@ -1,9 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
- const Header = () => (
+ const Header = ({title, handleTitleChange, inputText}) => (
    <View style={styles.container}>
-     <Text style={styles.headerTitle}>App Header</Text>
+     <Text style={styles.headerTitle}>{ title }</Text>
+     <TextInput
+      style={styles.textInput}
+      onChangeText={(text) => handleTitleChange(text)}
+      value={inputText}
+     />
    </View>
  );
 
@@ -13,11 +18,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#34495e',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 80,
+    height: 100,
     alignSelf: 'stretch',
   },
   headerTitle: {
     color: '#fff',
+  },
+  textInput: {
+    height: 20,
+    borderColor: 'gray',
+    borderWidth: 1,
+    width: '70%',
   }
 });
 
