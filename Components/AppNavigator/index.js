@@ -5,9 +5,11 @@ import SectionScreen from '../SectionScreen';
 import TabViewScreen from '../TabViewScreen';
 
 export const AppNavigator = createStackNavigator({
-  Main: { screen: HomeScreen, navigationOptions: () => ({       headerStyle: {
-        backgroundColor: '#3CAEA3',
-      }, headerMode: 'screen' }) },
+  Main: { screen: HomeScreen, navigationOptions: () => ({
+    headerStyle: {
+      backgroundColor: '#3CAEA3',
+    }, headerMode: 'screen' })
+  },
   SectionScreen: { screen: SectionScreen, navigationOptions: ({navigation}) => ({ title: navigation.state.params.sectionTitle }) },
 });
 

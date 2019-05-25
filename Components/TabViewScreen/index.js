@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 class TabViewScreen extends React.Component {
   render() {
     return (
-      <View style={{ alignItems: 'center', flexGrow: 1, justifyContent: 'center', backgroundColor: '#ED553B' }}>
+      <View style={{ alignItems: 'center', flex: 1, justifyContent: 'center', backgroundColor: '#ED553B' }}>
         <Text>Tab View Screen</Text>
       </View>
     );
