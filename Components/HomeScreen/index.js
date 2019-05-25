@@ -7,6 +7,8 @@ import { changeAppTitle } from '../../redux/appReducer';
 import Header from '../Header';
 import GridItem from '../GridItem';
 
+import styles from './styles.js';
+
 class HomeScreen extends React.Component {
   render() {
     return (
@@ -29,28 +31,6 @@ class HomeScreen extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  gridContainer: {
-    backgroundColor: '#173F5F',
-    flex: 1,
-    alignSelf: 'stretch',
-    padding: 30,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-  },
-  safeAreaView: {
-    flex: 1,
-    backgroundColor: '#34495e',
-  },
-});
 
 const mapState = ({appState: { title, categories }}) => ({ title, categories });
 const mapDispatch = { changeAppTitle };

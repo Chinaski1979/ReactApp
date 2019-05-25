@@ -15,7 +15,7 @@ export const AppNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator({
   Main: AppNavigator,
-  TabViewScreen: {screen: TabViewScreen},
+  TabViewScreen: { screen: TabViewScreen },
 });
 
 export default createAppContainer(TabNavigator);

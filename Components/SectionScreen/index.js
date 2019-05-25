@@ -1,6 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { Text, View } from 'react-native';
 
 class SectionScreen extends React.Component {
   render() {
