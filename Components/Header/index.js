@@ -15,7 +15,7 @@ import { StyleSheet, Text, View, TextInput } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     color: '#fff',
-    backgroundColor: '#34495e',
+    backgroundColor: '#173F5F',
     alignItems: 'center',
     justifyContent: 'center',
     height: 100,

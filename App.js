@@ -4,14 +4,16 @@ import { StyleSheet, Text } from 'react-native';
 
 import store from './redux/store';
 
-import AppContainer from './Components/AppContainer';
+import Navigation from './Components/AppNavigator';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <AppContainer />
+        <Navigation />
       </Provider>
     );
   }
 }
+
+export default App;

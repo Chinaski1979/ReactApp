@@ -1,18 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, View } from 'react-native';
 
- const GridItem = ({ title, fullWidth }) => (
-   <View style={styles.container}>
-     <Text style={styles.headerTitle}>{ title }</Text>
+ const GridItem = ({ title, fullWidth, handlePress }) => (
+   <View style={styles.container} >
+     <Button style={styles.headerTitle} onPress={handlePress} title={title}/>
    </View>
  );
 
 const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
-    borderColor: '#3498db',
+    borderColor: '#173F5F',
     color: '#fff',
-    backgroundColor: '#34495e',
+    backgroundColor: '#20639B',
     alignItems: 'center',
     justifyContent: 'center',
     width: '50%',
