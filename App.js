@@ -1,13 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import {getStore, getPersistor} from './app/store';
+import { getStore, getPersistor } from './store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { StyleSheet, Text } from 'react-native';
+import Navigation from './Components/AppNavigator';
 
 const store = getStore();
 const persistor = getPersistor();
-
-import Navigation from './Components/AppNavigator';
 
 class App extends React.Component {
   render() {
