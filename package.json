@@ -1,17 +1,19 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "Cenfotec React Native app",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.4.2",
-    "expo": "32.0.0",
+    "adm-zip": "^0.4.13",
     "native-base": "2.12.1",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "plist": "^3.0.1",
+    "react": "16.8.6",
+    "react-native": "0.59.9",
+    "react-native-fbsdk": "^0.8.0",
+    "react-native-gesture-handler": "1.3.0",
     "react-native-maps": "0.24.2",
     "react-navigation": "3.10.1",
     "react-redux": "6.0.1",
@@ -19,10 +21,20 @@
     "redux-actions": "2.2.1",
     "redux-logger": "3.0.6",
     "redux-persist": "5.10.0",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "xcode": "^2.0.0"
   },
   "devDependencies": {
-    "babel-preset-expo": "5.0.0"
+    "@babel/core": "7.4.5",
+    "@babel/runtime": "7.4.5",
+    "eslint": "5.16.0",
+    "eslint-config": "0.3.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "babel-preset-react-native": "^5.0.2"
   },
   "private": true
 }

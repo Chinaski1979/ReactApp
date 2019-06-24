@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>A718CB34-2BBC-4DA9-9FFB-61267433B2B5</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A718CB34-2BBC-4DA9-9FFB-61267433B2B5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cenfoRNApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cenfoRNApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project cenfoRNApp with scheme cenfoRNApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>582862665.676934</real>
+			<key>timeStoppedRecording</key>
+			<real>582862669.72279096</real>
+			<key>title</key>
+			<string>Building project cenfoRNApp with scheme cenfoRNApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>A718CB34-2BBC-4DA9-9FFB-61267433B2B5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
