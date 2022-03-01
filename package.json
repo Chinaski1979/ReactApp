@@ -9,7 +9,7 @@
     "@react-native-community/async-storage": "1.4.2",
     "adm-zip": "^0.4.13",
     "native-base": "2.12.1",
-    "plist": "^3.0.1",
+    "plist": "^3.0.4",
     "react": "16.8.6",
     "react-native": "0.59.9",
     "react-native-fbsdk": "^0.8.0",
